@@ -1,0 +1,125 @@
+/* ===== General ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* colors I picked */
+:root {
+  --main-color: #4aa3e0;
+  --main-dark: #2f7cb8;
+}
+
+/* ===== Buttons ===== */
+.btn-main {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.btn-main:hover {
+  background-color: var(--main-dark);
+  color: #fff;
+}
+
+/* ===== Login / Sign Up Page  ===== */
+.auth-body {
+  background: linear-gradient(135deg, #7ec8f0, #4aa3e0);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.auth-card {
+  border: none;
+  border-radius: 15px;
+}
+
+.switch-link {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch-link:hover {
+  text-decoration: underline;
+}
+/* default state */
+#signup {
+  display: none;
+}
+
+
+.card-body:has(#signup:target) #signup {
+  display: block;
+}
+
+
+.card-body:has(#signup:target) #login {
+  display: none;
+}
+
+.card-body:has(#login:target) #login {
+  display: block;
+}
+
+.card-body:has(#login:target) #signup {
+  display: none;
+}
+
+/* ===== Navbar ===== */
+.site-navbar {
+  background-color: var(--main-color);
+}
+
+.site-navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.site-navbar .nav-link {
+  color: #fff;
+  margin-left: 8px;
+}
+
+.site-navbar .nav-link:hover {
+  color: #d6eefb;
+}
+
+
+.hero {
+  background: linear-gradient(135deg, #4aa3e0, #7ec8f0);
+  padding: 120px 0 80px 0;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.feature-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+
+.site-footer {
+  background-color: #1f3a4d;
+}
+
+.footer-link {
+  color: #cce4f2;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
